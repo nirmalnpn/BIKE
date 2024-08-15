@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motorcycle Comparison Tool</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="Company Logo"> <!-- Add your logo image file here -->
+                </a>
+            </div>
+            <ul>
+                <li><a href="compare.html">Compare Bikes</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search...">
+                <button type="button" id="search-button"><i class="fas fa-search"></i></button>
+            </div>
+        </nav>
+    </header>
+   
+    <main>
+        <div class="content-wrapper">
+            <!-- Sidebar Section -->
+            <div class="main-content">
+                <!-- Slider Section -->
+                <section id="slider">
+                    <div class="slider-container">
+                        <div class="slide active">
+                            <img src="jawa-perak.jpg" alt="Slide 1"> <!-- Add your slide image files here -->
+                        </div>
+                        <div class="slide">
+                            <img src="Royal Enfield.jpg" alt="Slide 2">
+                        </div>
+                        <div class="slide">
+                            <img src="harley davidson.jpg" alt="Slide 3">
+                        </div>
+                        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                    </div>
+                </section>
+                <section id="hero">
+                    <div class="hero-content">
+                        <h1>Welcome to the Motorcycle Comparison Tool</h1>
+                        <p>Compare different motorcycles based on their specifications such as CC, engine type, power, and torque.</p>
+                        <a href="compare.html" class="cta-button">Get Started</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="social-media">
+            <a href="https://www.facebook.com/nirmal.neupane.9279807" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/nrml_npn/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com/@nirmalneupane9443?si=emU0iQ4RCyMR86lL" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://x.com/nipuun05" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2024 Motorcycle Comparison Tool. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
